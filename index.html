@@ -1,5 +1,42 @@
 <!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#39295c"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="manifest" href="manifest.webmanifest"><title>Твоя Каррера</title><style>
 *{box-sizing:border-box}body{margin:0;background:#f8f7fb;color:#262235;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:510px;margin:auto;padding:22px 18px 100px}header{display:flex;align-items:center;gap:12px;margin-bottom:25px}.avatar{border-radius:17px;background:#eee7ff;padding:12px;font-size:28px}header strong{font-size:22px}.muted,small{color:#777184;font-size:13px}h1{font-size:29px;line-height:1.15;margin:0 0 9px}h2{font-size:19px;margin:3px 0 12px}.card{border-radius:20px;background:white;border:1px solid #eae6f0;padding:19px;margin:14px 0;box-shadow:0 8px 25px #1a103007}.hero{background:#44306f;color:white;border:0}.hero p{color:#e1d6fa}.tag{color:#bdacfc;font-size:12px;font-weight:750;letter-spacing:.6px}.task{display:flex;gap:12px}.step{flex-shrink:0;display:grid;place-items:center;background:#eee8fe;color:#6440bd;width:33px;height:33px;border-radius:11px;font-weight:800}.task b{display:block}.task p{color:#777184;line-height:1.45;font-size:13px;margin:7px 0}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}button,.btn{background:#6849bd;color:white;border:0;border-radius:12px;padding:11px 13px;font-size:14px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}button.alt,.btn.alt{background:#eee8fc;color:#6042aa}button:disabled{opacity:.5}nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,510px);display:flex;justify-content:space-around;background:white;border-top:1px solid #eae5ef;padding:10px 1px max(15px,env(safe-area-inset-bottom))}nav button{background:transparent;color:#777184;padding:10px 8px}nav button.active{color:#6042aa}label{font-size:14px;font-weight:650}input,select{display:block;width:100%;margin:7px 0 17px;padding:12px;border:1px solid #dcd5e8;background:white;border-radius:12px;font:inherit}.bar{height:9px;background:#eee9f4;border-radius:15px;overflow:hidden}.fill{height:100%;background:#9475e6}.fine{font-size:12px;color:#888192}.done{color:#25845f;font-weight:700}.hidden{display:none}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--purple:#7657cc;--ink:#272339;--muted:#7c788b}
+body{font-family:Manrope,-apple-system,BlinkMacSystemFont,sans-serif;background:radial-gradient(ellipse 90% 35% at 85% -8%,#e9dcff 0%,transparent 100%),#f6f5fa;color:var(--ink)}
+main{max-width:510px;padding:26px 19px 126px}
+header{padding:5px 1px 16px;margin-bottom:16px;border-bottom:1px solid #e7e3ee}
+header strong{letter-spacing:-1px;font-size:22px;font-weight:800}
+header .muted{font-size:11px;letter-spacing:.1px;margin-top:2px}
+.avatar{position:relative;background:linear-gradient(145deg,#e9dfff,#c7b6fc);display:flex;align-items:center;justify-content:center;width:58px;height:58px;border-radius:19px;box-shadow:0 7px 18px #7555c52f;font-size:30px;border:2px solid #fff}
+h1{font-size:29px;font-weight:800;letter-spacing:-1.3px;line-height:1.2}
+h2{font-size:18px;font-weight:800;letter-spacing:-.5px}
+.muted,small{color:#7b7788}
+.card{border-radius:23px;border:1px solid #ebe6f1;background:#fff;padding:20px;margin:14px 0;box-shadow:0 5px 23px rgba(39,25,71,.045)}
+.card.hero{background:linear-gradient(132deg,#302440 0%,#4d3279 58%,#8060be 100%);position:relative;overflow:hidden;padding:27px 23px 23px;box-shadow:0 15px 32px #4b337029;color:white}
+.card.hero:before{content:"";position:absolute;width:215px;height:215px;border:1px solid #ffffff22;border-radius:50%;right:-105px;top:-85px;box-shadow:0 0 0 33px #ffffff08,0 0 0 69px #ffffff06}
+.card.hero:after{content:"✦";position:absolute;color:#e0cffb;right:25px;top:22px;font-size:27px}
+.hero h1{position:relative;z-index:1;font-size:31px;max-width:280px}
+.hero p{position:relative;z-index:1;color:#e2d7f6;font-size:13px;line-height:1.65;max-width:310px}
+.tag{color:#d6c3ff;font-weight:800;font-size:11px;letter-spacing:1.45px;position:relative;z-index:1;display:block;margin-bottom:11px}
+.bar{background:#eee9f6;height:9px}
+.hero .bar{background:#ffffff38;position:relative;z-index:1}
+.fill{background:linear-gradient(90deg,#a78dfc,#debcff);transition:width .25s}
+.card:not(.hero) .fill{background:#7657cc}
+.task{gap:14px;align-items:flex-start}.step{width:39px;height:39px;border-radius:14px;background:linear-gradient(145deg,#f3edff,#e6dcff);color:#6a46ba;font-size:16px}
+.task b{font-size:15px;line-height:1.4;font-weight:800}
+.task p{font-size:12px;line-height:1.65;margin:7px 0 9px}
+.actions{margin-top:16px}
+button,.btn{border-radius:13px;padding:12px 16px;background:#7956d2;font-family:inherit;font-size:12px;box-shadow:0 5px 13px #7753b626;transition:transform .15s}
+button:active,.btn:active{transform:scale(.97)}
+button.alt,.btn.alt{background:#f1ebfc;color:#6242ae;box-shadow:none}
+nav{max-width:490px;bottom:12px;border:1px solid #ebe7f2;border-radius:22px;box-shadow:0 8px 40px #25133825;padding:8px 8px max(8px,env(safe-area-inset-bottom));background:#fffffff2;backdrop-filter:blur(18px);gap:3px}
+nav button{display:grid;justify-items:center;align-content:center;flex:1;color:#8a8497;background:transparent;padding:13px 3px;border-radius:15px;box-shadow:none;font-size:12px}
+nav button.active{background:#f0e9ff;color:#6b47c3}
+input,select{border:1px solid #e1dbea;border-radius:13px;padding:14px;outline:none}
+input:focus,select:focus{border-color:#805ce0;box-shadow:0 0 0 3px #805ce01b}
+.fine{line-height:1.55}
+@media(min-width:650px){main{padding-top:45px}nav{bottom:20px}}
 </style></head><body><main><header><div class="avatar">🐱</div><div><strong>Твоя Каррера</strong><div class="muted">Маленькие шаги к новой работе</div></div></header><section id="view"></section></main><nav id="nav" class="hidden"><button id="nav-today" onclick="go('today')">Сегодня</button><button id="nav-plan" onclick="go('plan')">План</button><button id="nav-progress" onclick="go('progress')">Прогресс</button><button id="nav-coach" onclick="go('coach')">Каррера</button></nav><script>
 const key='tvoya-karrera-demo-v1';let s;try{s=JSON.parse(localStorage.getItem(key)||'null')||{}}catch{s={}}let page='today';const lessons=[
 [['Найди три интересные компании','Начни с поиска компаний, в которых хотел бы работать.','https://www.linkedin.com/search/results/companies/'],['Подпишись на одну компанию','Так ты увидишь её новости и новые вакансии.','https://www.linkedin.com/feed/'],['Сохрани подходящую вакансию','Пока не откликайся: изучи требования.','https://www.linkedin.com/jobs/']],
